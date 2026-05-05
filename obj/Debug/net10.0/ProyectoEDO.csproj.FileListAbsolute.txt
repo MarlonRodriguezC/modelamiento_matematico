@@ -1,0 +1,15 @@
+/Users/marlonrodriguez/Desktop/MetodosNumericos/ProyectoEDO/obj/Debug/net10.0/ProyectoEDO.GeneratedMSBuildEditorConfig.editorconfig
+/Users/marlonrodriguez/Desktop/MetodosNumericos/ProyectoEDO/obj/Debug/net10.0/ProyectoEDO.AssemblyInfoInputs.cache
+/Users/marlonrodriguez/Desktop/MetodosNumericos/ProyectoEDO/obj/Debug/net10.0/ProyectoEDO.AssemblyInfo.cs
+/Users/marlonrodriguez/Desktop/MetodosNumericos/ProyectoEDO/obj/Debug/net10.0/ProyectoEDO.csproj.CoreCompileInputs.cache
+/Users/marlonrodriguez/Desktop/MetodosNumericos/ProyectoEDO/obj/Debug/net10.0/ProyectoEDO.sourcelink.json
+/Users/marlonrodriguez/Desktop/MetodosNumericos/ProyectoEDO/bin/Debug/net10.0/ProyectoEDO
+/Users/marlonrodriguez/Desktop/MetodosNumericos/ProyectoEDO/bin/Debug/net10.0/ProyectoEDO.deps.json
+/Users/marlonrodriguez/Desktop/MetodosNumericos/ProyectoEDO/bin/Debug/net10.0/ProyectoEDO.runtimeconfig.json
+/Users/marlonrodriguez/Desktop/MetodosNumericos/ProyectoEDO/bin/Debug/net10.0/ProyectoEDO.dll
+/Users/marlonrodriguez/Desktop/MetodosNumericos/ProyectoEDO/bin/Debug/net10.0/ProyectoEDO.pdb
+/Users/marlonrodriguez/Desktop/MetodosNumericos/ProyectoEDO/obj/Debug/net10.0/ProyectoEDO.dll
+/Users/marlonrodriguez/Desktop/MetodosNumericos/ProyectoEDO/obj/Debug/net10.0/refint/ProyectoEDO.dll
+/Users/marlonrodriguez/Desktop/MetodosNumericos/ProyectoEDO/obj/Debug/net10.0/ProyectoEDO.pdb
+/Users/marlonrodriguez/Desktop/MetodosNumericos/ProyectoEDO/obj/Debug/net10.0/ProyectoEDO.genruntimeconfig.cache
+/Users/marlonrodriguez/Desktop/MetodosNumericos/ProyectoEDO/obj/Debug/net10.0/ref/ProyectoEDO.dll
