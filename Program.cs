@@ -12,8 +12,13 @@ class ProyectoMetodos
     static void Main()
     {
         EjecutarTarea1(0.1);
+
         EjecutarTarea1(0.05);
+
         EjecutarTarea2(0.1);
+
+        EjecutarTarea3(0.1);
+
     }
 
     static void EjecutarTarea1(double h)
@@ -87,5 +92,46 @@ class ProyectoMetodos
           yRK4 += (h / 6.0) * (k1 + 2 * k2 + 2 * k3 + k4);
           x += h;
          }
+    }
+    static void EjecutarTarea3(double h)
+    {
+    
+        double[] x = new double[5];
+        double[] y = new double[5];
+    
+        // Función específica para Tarea 3: y' = 4x - 2y
+        Func<double, double, double> f3 = (vx, vy) => 4 * vx - 2 * vy;
+
+        x[0] = 0;
+        y[0] = 2;
+
+        Console.WriteLine("\n--- TAREA 3: ADAMS-BASHFORTH-MOULTON ---");
+        Console.WriteLine("xn\tyn\tMétodo");
+        Console.WriteLine($"{x[0]:F1}\t{y[0]:F4}\t(Dato inicial)");
+
+        // PASO 1: Usar RK4 para obtener y1, y2 y y3
+        for (int i = 0; i < 3; i++)
+        {
+            double k1 = f3(x[i], y[i]);
+            double k2 = f3(x[i] + h / 2.0, y[i] + (h / 2.0) * k1);
+            double k3 = f3(x[i] + h / 2.0, y[i] + (h / 2.0) * k2);
+            double k4 = f3(x[i] + h, y[i] + h * k3);
+
+            y[i + 1] = y[i] + (h / 6.0) * (k1 + 2 * k2 + 2 * k3 + k4);
+            x[i + 1] = x[i] + h;
+            Console.WriteLine($"{x[i+1]:F1}\t{y[i+1]:F4}\t(RK4)");
+        }
+
+         // PASO 2: Calcular y4 (y(0.4)) usando Adams-Bashforth-Moulton
+        int n = 3; 
+        // Predictor (Adams-Bashforth de 4 pasos)
+        double y_pred = y[n] + (h / 24.0) * (55 * f3(x[n], y[n]) - 59 * f3(x[n-1], y[n-1]) + 37 * f3(x[n-2], y[n-2]) - 9 * f3(x[n-3], y[n-3]));
+    
+        double x_next = x[n] + h;
+
+        // Corrector (Adams-Moulton de 4 pasos)
+         double y_corr = y[n] + (h / 24.0) * (9 * f3(x_next, y_pred) + 19 * f3(x[n], y[n]) - 5 * f3(x[n-1], y[n-1]) + f3(x[n-2], y[n-2]));
+
+        Console.WriteLine($"{x_next:F1}\t{y_corr:F4}\t(Adams-BM)");
     }
 }

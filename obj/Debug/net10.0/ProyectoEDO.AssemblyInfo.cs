@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProyectoEDO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d81934c28f61b09b3161fe214cdc08dae9ae640e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1383fb4be2dfec220fe928513a0ff14c0d586638")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProyectoEDO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProyectoEDO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
